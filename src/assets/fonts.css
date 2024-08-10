@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "net-necks";
+  src: url("/assets/fonts/FontsFree-Net-Necks.ttf");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("/assets/fonts/SF-Pro-Display-Regular.otf");
+}
