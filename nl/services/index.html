@@ -1,513 +1,734 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Parquets page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/dist/output.css" />
-  <title>Parquets page</title>
-</head>
-
-<body class="relative">
-  <header class="border-b border-b-gray-light-500">
-    <div class="bg-primary h-[30px]">
-      <div class="max-w-[1000px] h-full m-auto px-[10px] grid grid-cols-1 md:grid-cols-3 items-center">
-        <div class="md:block hidden"></div>
-        <div class="flex justify-center">
-          <div class="pr-[10px] border-r-[1px] border-r-slate-400 text-white">
-            <span>09:00 - 19:00</span>
+  <body class="relative">
+    <header class="border-b border-b-gray-light-500">
+      <div class="bg-primary h-[30px]">
+        <div
+          class="max-w-[1000px] h-full m-auto px-[10px] grid grid-cols-1 md:grid-cols-3 items-center"
+        >
+          <div class="md:block hidden"></div>
+          <div class="flex justify-center">
+            <div class="pr-[10px] border-r-[1px] border-r-slate-400 text-white">
+              <span>09:00 - 19:00</span>
+            </div>
+            <div class="pl-[10px] text-white">
+              <a :href="`tel:+380733838456`">
+                <span>+380733838456</span>
+              </a>
+            </div>
           </div>
-          <div class="pl-[10px] text-white">
-            <a :href="`tel:+380733838456`">
-              <span>+380733838456</span>
-            </a>
+          <div class="justify-end md:flex hidden">
+            <div class="pr-[10px] border-r-[1px] border-r-slate-400 text-white">
+              <a href="/en/services/" class="border-1 border-white">EN</a>
+            </div>
+            <div class="pl-[10px] text-white">
+              <button>NL</button>
+              <div class="w-full h-[1px] bg-slate-400"></div>
+            </div>
           </div>
         </div>
-        <div class="justify-end md:flex hidden">
-          <div class="pr-[10px] border-r-[1px] border-r-slate-400 text-white">
-            <a href="/en/services/" class="border-1 border-white">EN</a>
-          </div>
-          <div class="pl-[10px] text-white">
-            <button>NL</button>
-            <div class="w-full h-[1px] bg-slate-400"></div>
-          </div>
-        </div>
       </div>
-    </div>
-    <div class="max-w-[1000px] m-auto px-[10px] min-h-[70px] grid grid-cols-3 items-center content-center">
-      <ul class="gap-[15px] hidden lg:flex">
-        <li class="cursor-pointer border-b-primary group text-primary">
-          <a href="/nl">Thuis</a>
-          <div class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all" />
-        </li>
-        <li class="cursor-pointer border-b-primary group">
-          <a href="/nl/services">Diensten</a>
-          <div class="w-full h-[1px] bg-primary" />
-        </li>
-        <li class="cursor-pointer border-b-primary group">
-          <a href="/nl/prices">Prijzen</a>
-          <div class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all" />
-        </li>
-        <li class="cursor-pointer border-b-primary group">
-          <a href="/nl/contacts">Contacten</a>
-          <div class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all" />
-        </li>
-      </ul>
-      <div class="lg:hidden block">
-        <button class="navbar-burger flex items-center text-primary p-3" id="hamburger-button">
-          <svg class="block h-[20px] fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu mobiel</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="flex items-center justify-center">
-        <div class="aspect-square rounded-full w-[50px] bg-primary"></div>
-      </div>
-
-      <div class="flex justify-end">
-        <button
-          class="h-[30px] w-auto px-[10px] text-primary border-primary border-[1px] rounded-lg hover:bg-primary hover:text-white transition-all mr-[10px]">
-          <span>Bestellen</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="relative h-[calc(100vh-500px)] sm:h-[calc(100vh-300px)] max-w-screen mx-auto">
-      <swiper-container pagination="true" autoplay pagination-clickable="true" effect="fade" class="h-full w-full">
-        <swiper-slide class="h-full w-full">
-          <div class="relative h-full w-full">
-            <img src="/src/assets/imgs/slider_img1.jpeg" alt="w-full h-full parquet example image object-cover" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="relative  h-full w-full">
-            <img src="/src/assets/imgs/slider_img2.jpeg" alt="w-full h-full parquet example image object-cover" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-        </swiper-slide>
-      </swiper-container>
       <div
-        class="absolute w-full px-[20px] left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] text-white z-10 text-center font-bold">
-        <h1 class="text-2xl">RESTAURATIE EN POLIJSTEN VAN PARKET</h1>
-        <p class="text-md mt-[10px]">
-          Ervaren vakmensen gebruiken professionele apparatuur en milieuvriendelijke materialen
-        </p>
-      </div>
-    </section>
-
-    <section class="max-w-[1000px] my-[60px] mx-auto px-[15px]">
-      <div class="grid grid-cols-[1fr_auto_1fr] items-center">
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        <h2 class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark">
-          PARKETSERVICE
-        </h2>
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-      </div>
-      <p class="mt-[25px] text-center text-grayDark2">
-        Vroeg of laat staat iedereen voor de keuze van een vloerbedekking. En natuurlijk is het beter om nieuwe
-        materialen
-        te gebruiken voor de inrichting van een kamer. Maar soms kan het oude parket nog vele jaren trouw dienen. In dit
-        geval is parketrestauratie precies wat uw vloer een nieuw leven zal geven. Als u nieuw parket of parketplanken
-        heeft
-        gekozen, kunnen wij u ook van dienst zijn. Nu meer hierover en daarover...
-      </p>
-    </section>
-
-    <section class="max-w-[1000px] mt-[60px] mb-[20px] mx-auto px-[15px]">
-      <div class="grid grid-cols-2 sm:grid-cols-3 grid-rows-2 gap-[15px]">
-        <div class="relative col-span-2 sm:col-span-1 row-span-1 sm:row-span-2 sm:h-full">
-          <div class="relative h-full w-full">
-            <img class="h-full object-cover" src="/src/assets/imgs/slider_img1.jpeg"
-              alt="parquet voorbeeld afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-          <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-            <h2 class="font-bold text-white text-4xl">Parket Reparatie</h2>
-          </div>
-        </div>
-        <div class="relative sm:col-span-1 col-span-2">
-          <div class="relative h-full w-full">
-            <img class="object-cover" src="/src/assets/imgs/slider_img1.jpeg" alt="parquet voorbeeld afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-          <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-            <h3 class="font-medium text-white text-2xl">Parket Schuren</h3>
-          </div>
-        </div>
-        <div class="relative col-span-1">
-          <div class="relative h-full w-full">
-            <img class="h-full object-cover" src="/src/assets/imgs/slider_img1.jpeg"
-              alt="parquet voorbeeld afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-          <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-            <h3 class="font-medium text-white text-2xl">Parket Beitsen en Lakken</h3>
-          </div>
-        </div>
-        <div class="relative col-span-1">
-          <div class="relative h-full w-full">
-            <img class="h-full object-cover" src="/src/assets/imgs/slider_img1.jpeg"
-              alt="parquet voorbeeld afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-          <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-            <h3 class="font-medium text-white text-2xl">Parket Polijsten</h3>
-          </div>
-        </div>
-        <div class="relative sm:col-span-1 col-span-2">
-          <div class="relative h-full w-full">
-            <img class="h-full object-cover" src="/src/assets/imgs/slider_img1.jpeg"
-              alt="parquet voorbeeld afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 bg-black opacity-20"></div>
-          </div>
-          <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-            <h3 class="font-medium text-white text-2xl">Parket Installatie</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-t border-t-zinc-200 border-b border-b-zinc-200">
-      <div class="max-w-[1000px] sm:my-[60px] my-[30px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-[15px]">
-        <div class="flex flex-col gap-[5px] text-grayDark2 text-center">
-          <h2 class="font-medium text-xl text-primary">Parketwerk</h2>
-          <p class="mt-[25px] text-center">Wij voeren reparatiewerkzaamheden en diensten uit voor parket en houten
-            vloeren
-            in
-            Kiev en de regio Kiev.</p>
-          <p class="mt-[25px] text-center text-grayDark2">Reparatie en restauratie van oude vloerbedekkingen worden
-            uitgevoerd binnen
-            overeengekomen termijnen en kosten. Materialen voor de werkzaamheden kunnen wij
-            leveren of uw eigen materialen gebruiken.</p>
-          <p class="mt-[25px] text-center text-grayDark2">Wij komen naar de locatie met eigen vervoer. Wij gebruiken
-            apparatuur van Duitse makelij.</p>
-          <div>
-            <button
-              class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all">Een
-              aanvraag indienen</button>
-          </div>
-        </div>
-        <div>
-          <img class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-            src="/src/assets/imgs/parket-auto.jpeg" alt="parquet example image">
-        </div>
-      </div>
-    </section>
-
-    <section class="border-t border-t-zinc-200 border-b border-b-zinc-200">
-      <div class="max-w-[1000px] sm:my-[60px] my-[30px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-[15px]">
-        <div>
-          <img class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-            src="/src/assets/imgs/parquet-restore.jpeg" alt="parquet example image">
-        </div>
-        <div class="flex flex-col gap-[5px] text-grayDark2 text-center justify-center">
-          <h2 class="font-medium text-xl text-primary">Parketrestauratie</h2>
-          <p class="mt-[25px] text-center">Omvat een reeks maatregelen om de vloer te herstellen. Namelijk de
-            transformatie
-            van een oude of versleten parket- of houten vloer naar een nieuwe staat.</p>
-          <div>
-            <button
-              class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all">Bestellen</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="grid grid-cols-[1fr_auto_1fr] items-center mt-[50px] mb-[20px]">
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        <h3 class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark">
-          KOSTEN VAN PARKETRENOVATIE
-        </h3>
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-      </div>
-      <div class="">
-        <div class="max-w-[1000px] mx-auto px-[15px]">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px] ">
-            <div class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white">
-              <div class="p-[10px] text-center text-grayDark2">
-                <p class="font-bold text-primary text-lg">Parket Renovatie</p>
-                <p>uitgebreid</p>
-                <p class="font-bold mt-[10px]">vanaf 140 UAH / m²</p>
-                <p class="text-center mt-[15px]">omvat <br>
-                  schuren, plamuren, 3-laagse lakken</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white">
-              <div class="p-[10px] text-center text-grayDark2">
-                <p class="font-bold text-primary text-lg">Schuren</p>
-                <p class="font-bold mt-[28px]">vanaf 60 UAH / m²</p>
-                <p class="text-center mt-[15px]">uitgevoerd <br>
-                  met professionele apparatuur</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white">
-              <div class="p-[10px] text-center text-grayDark2">
-                <p class="font-bold text-primary text-lg">Vernissen</p>
-                <p class="font-bold mt-[28px]">vanaf 25 UAH / m²</p>
-                <p class="text-center mt-[15px]">3 laklagen <br>
-                  van Europese merken</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="max-w-[1000px] mx-auto px-[15px]">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px] ">
-          <div class="flex h-full flex-col items-center justify-center">
-            <div class="text-center ">
-              <h3 class="font-bold text-xl">
-                Extra Diensten
-              </h3>
-              <button
-                class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white  border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all">
-                <span>Vraag Prijs Aan</span>
-              </button>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center drop-shadow-md shadow-md p-[20px] bg-white">
-            <div class="text-grayDark2 flex">
-              <ul class="list-disc marker:text-primary marker:text-[20px] list-inside">
-                <li>
-                  <span>Vernis aanbrengen</span>
-                </li>
-                <li>
-                  <span>Scheurvulling</span>
-                </li>
-                <li>
-                  <span>Plint installatie</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center drop-shadow-md shadow-md p-[20px] bg-white">
-            <div class="text-grayDark2">
-              <p class="font-bold text-primary text-lg">Installatie</p>
-              <ul class="list-disc marker:text-primary marker:text-[20px] list-inside">
-                <li>
-                  <span>Laminaat en multiplex</span>
-                </li>
-                <li>
-                  <span>Parket en parketplaat</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pb-[30px]">
-      <div class="flex justify-center my-[20px]">
-        <div class="h-[3px] w-[70px] bg-zinc-200"></div>
-      </div>
-      <h4 class="font-bold text-xl text-center">
-        Minimale bestelling - <span class="text-primary text-2xl">vanaf 20* m².</span>
-      </h4>
-      <p class="text-grayDark2 text-sm text-center mt-[10px]">* als de bestelhoeveelheid minder is dan 20 m² - <br>
-        worden kosten en voorwaarden apart besproken</p>
-    </section>
-
-    <section>
-      <div class="bg-primary py-[50px]">
-        <div class="text-white text-center max-w-[450px] mx-auto px-[30px]">
-          <h3 class="sm:text-4xl text-2xl font-bold">Specificeer de Prijs</h3>
-          <p class="my-[16px] flex flex-col gap-[15px]">
-            <span class="sm:text-2xl text-md leading-relaxed">De beste manier om de kosten van het werk te bepalen is om
-              te
-              overleggen met onze specialisten voor advies en schatting. U kunt ook nuttig advies krijgen over de
-              materiaalkeuze. Wij bieden alle consultaties, adviezen en schattingen</span>
-            <strong class="sm:text-3xl text-xl">GRATIS</strong>
-          </p>
+        class="max-w-[1000px] m-auto px-[10px] min-h-[70px] grid grid-cols-3 items-center content-center"
+      >
+        <ul class="gap-[15px] hidden lg:flex">
+          <li class="cursor-pointer border-b-primary group text-primary">
+            <a href="/nl">Thuis</a>
+            <div
+              class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+            />
+          </li>
+          <li class="cursor-pointer border-b-primary group">
+            <a href="/nl/services">Diensten</a>
+            <div class="w-full h-[1px] bg-primary" />
+          </li>
+          <li class="cursor-pointer border-b-primary group">
+            <a href="/nl/prices">Prijzen</a>
+            <div
+              class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+            />
+          </li>
+          <li class="cursor-pointer border-b-primary group">
+            <a href="/nl/contacts">Contacten</a>
+            <div
+              class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+            />
+          </li>
+        </ul>
+        <div class="lg:hidden block">
           <button
-            class="mt-[10px]  sm:text-3xl text-xl w-auto px-[15px] py-[10px] bg-white text-primary  border-[1px] rounded-xl hover:bg-primary hover:text-white transition-all">
-            <span>Ontvang een schatting</span>
+            class="navbar-burger flex items-center text-primary p-3"
+            id="hamburger-button"
+          >
+            <svg
+              class="block h-[20px] fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu mobiel</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-center">
+          <div class="aspect-square rounded-full w-[50px] bg-primary"></div>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            class="h-[30px] w-auto px-[10px] text-primary border-primary border-[1px] rounded-lg hover:bg-primary hover:text-white transition-all mr-[10px]"
+          >
+            <span>Bestellen</span>
           </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <div class="grid grid-cols-[1fr_auto_1fr] items-center my-[30px]">
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        <h3 class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark">
-          ONZE WERKEN
-        </h3>
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="relative">
-          <div class="relative h-full w-full group overflow-hidden">
-            <img class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-              src="/src/assets/imgs/slider_img1.jpeg" alt="voorbeeld parket afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 opacity-20 bg-black"></div>
-            <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-              <h4 class="font-bold text-white text-4xl">Parket Vóór Reparatie</h4>
+    <main>
+      <section
+        class="relative h-[calc(100vh-500px)] sm:h-[calc(100vh-300px)] max-w-screen mx-auto"
+      >
+        <swiper-container
+          pagination="true"
+          autoplay
+          pagination-clickable="true"
+          effect="fade"
+          class="h-full w-full"
+        >
+          <swiper-slide class="h-full w-full">
+            <div class="relative h-full w-full">
+              <img
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="w-full h-full parquet example image object-cover"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative h-full w-full">
+              <img
+                src="/src/assets/imgs/slider_img2.jpeg"
+                alt="w-full h-full parquet example image object-cover"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <div
+          class="absolute w-full px-[20px] left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] text-white z-10 text-center font-bold"
+        >
+          <h1 class="text-2xl">RESTAURATIE EN POLIJSTEN VAN PARKET</h1>
+          <p class="text-md mt-[10px]">
+            Ervaren vakmensen gebruiken professionele apparatuur en
+            milieuvriendelijke materialen
+          </p>
+        </div>
+      </section>
+
+      <section class="max-w-[1000px] my-[60px] mx-auto px-[15px]">
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center">
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+          <h2
+            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+          >
+            PARKETSERVICE
+          </h2>
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+        </div>
+        <p class="mt-[25px] text-center text-grayDark2">
+          Vroeg of laat staat iedereen voor de keuze van een vloerbedekking. En
+          natuurlijk is het beter om nieuwe materialen te gebruiken voor de
+          inrichting van een kamer. Maar soms kan het oude parket nog vele jaren
+          trouw dienen. In dit geval is parketrestauratie precies wat uw vloer
+          een nieuw leven zal geven. Als u nieuw parket of parketplanken heeft
+          gekozen, kunnen wij u ook van dienst zijn. Nu meer hierover en
+          daarover...
+        </p>
+      </section>
+
+      <section class="max-w-[1000px] mt-[60px] mb-[20px] mx-auto px-[15px]">
+        <div class="grid grid-cols-2 sm:grid-cols-3 grid-rows-2 gap-[15px]">
+          <div
+            class="relative col-span-2 sm:col-span-1 row-span-1 sm:row-span-2 sm:h-full"
+          >
+            <div class="relative h-full w-full">
+              <img
+                class="h-full object-cover"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="parquet voorbeeld afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+            <div
+              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+            >
+              <h2 class="font-bold text-white text-4xl">Parket Reparatie</h2>
+            </div>
+          </div>
+          <div class="relative sm:col-span-1 col-span-2">
+            <div class="relative h-full w-full">
+              <img
+                class="object-cover"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="parquet voorbeeld afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+            <div
+              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+            >
+              <h3 class="font-medium text-white text-2xl">Parket Schuren</h3>
+            </div>
+          </div>
+          <div class="relative col-span-1">
+            <div class="relative h-full w-full">
+              <img
+                class="h-full object-cover"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="parquet voorbeeld afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+            <div
+              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+            >
+              <h3 class="font-medium text-white text-2xl">
+                Parket Beitsen en Lakken
+              </h3>
+            </div>
+          </div>
+          <div class="relative col-span-1">
+            <div class="relative h-full w-full">
+              <img
+                class="h-full object-cover"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="parquet voorbeeld afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+            <div
+              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+            >
+              <h3 class="font-medium text-white text-2xl">Parket Polijsten</h3>
+            </div>
+          </div>
+          <div class="relative sm:col-span-1 col-span-2">
+            <div class="relative h-full w-full">
+              <img
+                class="h-full object-cover"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="parquet voorbeeld afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
+              ></div>
+            </div>
+            <div
+              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+            >
+              <h3 class="font-medium text-white text-2xl">
+                Parket Installatie
+              </h3>
             </div>
           </div>
         </div>
-        <div class="relative">
-          <div class="relative h-full w-full group overflow-hidden">
-            <img class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-              src="/src/assets/imgs/slider_img1.jpeg" alt="voorbeeld parket afbeelding" />
-            <div class="absolute h-full w-full left-0 top-0 opacity-20 bg-black"></div>
-            <div class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center">
-              <h4 class="font-bold text-white text-4xl">Parket Na Reparatie</h4>
+      </section>
+
+      <section class="border-t border-t-zinc-200 border-b border-b-zinc-200">
+        <div
+          class="max-w-[1000px] sm:my-[60px] my-[30px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-[15px]"
+        >
+          <div class="flex flex-col gap-[5px] text-grayDark2 text-center">
+            <h2 class="font-medium text-xl text-primary">Parketwerk</h2>
+            <p class="mt-[25px] text-center">
+              Wij voeren reparatiewerkzaamheden en diensten uit voor parket en
+              houten vloeren in Kiev en de regio Kiev.
+            </p>
+            <p class="mt-[25px] text-center text-grayDark2">
+              Reparatie en restauratie van oude vloerbedekkingen worden
+              uitgevoerd binnen overeengekomen termijnen en kosten. Materialen
+              voor de werkzaamheden kunnen wij leveren of uw eigen materialen
+              gebruiken.
+            </p>
+            <p class="mt-[25px] text-center text-grayDark2">
+              Wij komen naar de locatie met eigen vervoer. Wij gebruiken
+              apparatuur van Duitse makelij.
+            </p>
+            <div>
+              <button
+                class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
+              >
+                Een aanvraag indienen
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
+              src="/src/assets/imgs/parket-auto.jpeg"
+              alt="parquet example image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-t-zinc-200 border-b border-b-zinc-200">
+        <div
+          class="max-w-[1000px] sm:my-[60px] my-[30px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-[15px]"
+        >
+          <div>
+            <img
+              class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
+              src="/src/assets/imgs/parquet-restore.jpeg"
+              alt="parquet example image"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-[5px] text-grayDark2 text-center justify-center"
+          >
+            <h2 class="font-medium text-xl text-primary">Parketrestauratie</h2>
+            <p class="mt-[25px] text-center">
+              Omvat een reeks maatregelen om de vloer te herstellen. Namelijk de
+              transformatie van een oude of versleten parket- of houten vloer
+              naar een nieuwe staat.
+            </p>
+            <div>
+              <button
+                class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
+              >
+                Bestellen
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="grid grid-cols-[1fr_auto_1fr] items-center my-[30px]">
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        <h3 class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark">
-          ONZE WERKEN PORTFOLIO
-        </h3>
-        <div class="h-[1px] w-full relative bg-zinc-200"></div>
-      </div>
-
-      <div class="w-full overflow-hidden">
-        <div class="relative portfolio-swiper-container">
-          <div class="h-full">
-            <div class="swiper-button-next">
-            </div>
-            <div class="swiper-button-prev">
-            </div>
-          </div>
-          <div class="swiper-wrapper" id="portfolio-swiper-wrapper">
-          </div>
+      <section>
+        <div
+          class="grid grid-cols-[1fr_auto_1fr] items-center mt-[50px] mb-[20px]"
+        >
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+          <h3
+            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+          >
+            KOSTEN VAN PARKETRENOVATIE
+          </h3>
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="bg-primary my-[2px]">
-      <div class="py-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[50px] text-white px-[15px] max-w-[1000px] mx-auto">
-        <div>
-          <h2 class="uppercase font-bold mb-[10px]">Over ons</h2>
-          <p>Parketwerken in Kiev en de regio Kiev is onze specialiteit. Wij voeren reparaties uit aan oude
-            vloerbedekking
-            met de hoogste kwaliteit, tot het punt dat u het niet meer herkent.</p>
-        </div>
-        <div>
-          <h2 class="uppercase font-bold mb-[10px]">PARKETDIENSTEN</h2>
-          <ul class="list-disc marker:text-white marker:text-[20px] list-inside">
-            <li>
-              <span>Parket Restauratie</span>
-            </li>
-            <li>
-              <span>Parket Schuren</span>
-            </li>
-            <li>
-              <span>Parket en Vloer Schrapen</span>
-            </li>
-            <li>
-              <span>Parket Lakken en Beitsen</span>
-            </li>
-            <li>
-              <span>Parket en Laminaat Installatie</span>
-            </li>
-            <li>
-              <span>Parketvloer Reparatie</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="uppercase font-bold mb-[10px]">CONTACT</h2>
-          <ul>
-            <li>
-              <a href="tel:+380733838456">+380733838456</a>
-            </li>
-            <li>
-              <a href="mailto:zakaz@parketchik.kiev.ua">zakaz@parketchik.kiev.ua</a> <br>
-              <span>Kiev, Zhmerinska St, 5</span>
-            </li>
-            <li class="flex gap-[15px] mt-[20px]">
-              <span class="iconify text-[44px] bg-red" style="color: white" data-icon="logos:telegram"></span>
-              <span class="iconify text-[44px] bg-red" style="color: white" data-icon="logos:whatsapp-icon"></span>
-              <span class="iconify text-[44px] bg-red" style="color: white" data-icon="skill-icons:instagram"></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-slate-900">
-      <div class="p-[15px] text-white text-center flex flex-col sm:flex-row justify-center ">
-        <a href="https://bento.me/danik-prich"
-          class="cursor-pointer pr-[10px] border-0 sm:border-r border-r-grayDark2 mr-[10px]">Auteursrecht 2024
-          ©
-          Daniel
-          Prich</a>
-        <a href="#" class="cursor-pointer text-grayDark2">Privacybeleid</a>
-      </div>
-    </footer>
-
-    <!-- Modal afbeeldingen -->
-    <section class="hidden fixed top-0 z-10 w-screen h-screen overflow-hidden bg-slate-950/90 items-center"
-      id="images-modal">
-      <button id="images-modal-close" class="absolute top-[15px] right-[15px] bg-white rounded-lg">
-        <span class="iconify text-[44px] bg-red" style="color: #15355f" data-icon="mdi:close"></span>
-      </button>
-      <div class="w-full h-[calc(100vh-500px)] sm:h-[calc(100vh-200px)] max-w-screen">
-        <div class="relative w-full h-full modal-swiper-container">
-          <div class="swiper-wrapper w-full h-full" id="modal-images-swiper-wrapper">
-          </div>
-          <div class="h-full w-full">
-            <div class="swiper-button-next">
-            </div>
-            <div class="swiper-button-prev">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Zijmenu -->
-    <section class="hidden fixed top-0 z-10 w-full  h-screen bg-primary/40 items-center" id="sidebar-menu-wrapper">
-      <button id="sidebar-menu-close" class="absolute top-[15px] right-[10px] bg-white rounded-lg hover:bg-gray">
-        <span class="iconify text-[30px] bg-red" style="color: #15355f" data-icon="mdi:close"></span>
-      </button>
-      <div class="translate-x-[-100%] w-[calc(100vw-50px)] h-full bg-white transition-all" id="sidebar-menu-list">
-        <nav class="py-[60px]">
-          <ul class="flex flex-col text-primary text-2xl">
-            <li class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray">
-              <a href="/nl" class="block w-full h-full px-[20px] py-[20px]">Home</a>
-            </li>
-            <li class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray">
-              <a href="/nl/services/" class="block w-full h-full px-[20px] py-[20px]">Diensten</a>
-            </li>
-            <li class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray">
-              <a href="/nl/prices" class="block w-full h-full px-[20px] py-[20px]">Prijzen</a>
-            </li>
-            <li class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray">
-              <a href="/nl/contacts" class="block w-full h-full px-[20px] py-[20px]">Contacten</a>
-            </li>
-            <li class="flex justify-center px-[40px] py-[20px]">
-              <div class="pr-[10px] ">
-                <a href="/en/services" class="cursor-pointer ">EN</a>
+        <div class="">
+          <div class="max-w-[1000px] mx-auto px-[15px]">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
+              <div
+                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white"
+              >
+                <div class="p-[10px] text-center text-grayDark2">
+                  <p class="font-bold text-primary text-lg">Parket Renovatie</p>
+                  <p>uitgebreid</p>
+                  <p class="font-bold mt-[10px]">vanaf 140 UAH / m²</p>
+                  <p class="text-center mt-[15px]">
+                    omvat <br />
+                    schuren, plamuren, 3-laagse lakken
+                  </p>
+                </div>
               </div>
-              <div class="pl-[10px] ">
-                <button class="cursor-pointer ">NL</button>
+              <div
+                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white"
+              >
+                <div class="p-[10px] text-center text-grayDark2">
+                  <p class="font-bold text-primary text-lg">Schuren</p>
+                  <p class="font-bold mt-[28px]">vanaf 60 UAH / m²</p>
+                  <p class="text-center mt-[15px]">
+                    uitgevoerd <br />
+                    met professionele apparatuur
+                  </p>
+                </div>
               </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </main>
+              <div
+                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white"
+              >
+                <div class="p-[10px] text-center text-grayDark2">
+                  <p class="font-bold text-primary text-lg">Vernissen</p>
+                  <p class="font-bold mt-[28px]">vanaf 25 UAH / m²</p>
+                  <p class="text-center mt-[15px]">
+                    3 laklagen <br />
+                    van Europese merken
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="/dist/bundle.js"></script>
-  <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
-</body>
+      <section>
+        <div class="max-w-[1000px] mx-auto px-[15px]">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
+            <div class="flex h-full flex-col items-center justify-center">
+              <div class="text-center">
+                <h3 class="font-bold text-xl">Extra Diensten</h3>
+                <button
+                  class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
+                >
+                  <span>Vraag Prijs Aan</span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center drop-shadow-md shadow-md p-[20px] bg-white"
+            >
+              <div class="text-grayDark2 flex">
+                <ul
+                  class="list-disc marker:text-primary marker:text-[20px] list-inside"
+                >
+                  <li>
+                    <span>Vernis aanbrengen</span>
+                  </li>
+                  <li>
+                    <span>Scheurvulling</span>
+                  </li>
+                  <li>
+                    <span>Plint installatie</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center drop-shadow-md shadow-md p-[20px] bg-white"
+            >
+              <div class="text-grayDark2">
+                <p class="font-bold text-primary text-lg">Installatie</p>
+                <ul
+                  class="list-disc marker:text-primary marker:text-[20px] list-inside"
+                >
+                  <li>
+                    <span>Laminaat en multiplex</span>
+                  </li>
+                  <li>
+                    <span>Parket en parketplaat</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="pb-[30px]">
+        <div class="flex justify-center my-[20px]">
+          <div class="h-[3px] w-[70px] bg-zinc-200"></div>
+        </div>
+        <h4 class="font-bold text-xl text-center">
+          Minimale bestelling -
+          <span class="text-primary text-2xl">vanaf 20* m².</span>
+        </h4>
+        <p class="text-grayDark2 text-sm text-center mt-[10px]">
+          * als de bestelhoeveelheid minder is dan 20 m² - <br />
+          worden kosten en voorwaarden apart besproken
+        </p>
+      </section>
+
+      <section>
+        <div class="bg-primary py-[50px]">
+          <div class="text-white text-center max-w-[450px] mx-auto px-[30px]">
+            <h3 class="sm:text-4xl text-2xl font-bold">Specificeer de Prijs</h3>
+            <p class="my-[16px] flex flex-col gap-[15px]">
+              <span class="sm:text-2xl text-md leading-relaxed"
+                >De beste manier om de kosten van het werk te bepalen is om te
+                overleggen met onze specialisten voor advies en schatting. U
+                kunt ook nuttig advies krijgen over de materiaalkeuze. Wij
+                bieden alle consultaties, adviezen en schattingen</span
+              >
+              <strong class="sm:text-3xl text-xl">GRATIS</strong>
+            </p>
+            <button
+              class="mt-[10px] sm:text-3xl text-xl w-auto px-[15px] py-[10px] bg-white text-primary border-[1px] rounded-xl hover:bg-primary hover:text-white transition-all"
+            >
+              <span>Ontvang een schatting</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center my-[30px]">
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+          <h3
+            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+          >
+            ONZE WERKEN
+          </h3>
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div class="relative">
+            <div class="relative h-full w-full group overflow-hidden">
+              <img
+                class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="voorbeeld parket afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 opacity-20 bg-black"
+              ></div>
+              <div
+                class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+              >
+                <h4 class="font-bold text-white text-4xl">
+                  Parket Vóór Reparatie
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="relative h-full w-full group overflow-hidden">
+              <img
+                class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
+                src="/src/assets/imgs/slider_img1.jpeg"
+                alt="voorbeeld parket afbeelding"
+              />
+              <div
+                class="absolute h-full w-full left-0 top-0 opacity-20 bg-black"
+              ></div>
+              <div
+                class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
+              >
+                <h4 class="font-bold text-white text-4xl">
+                  Parket Na Reparatie
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center my-[30px]">
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+          <h3
+            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+          >
+            ONZE WERKEN PORTFOLIO
+          </h3>
+          <div class="h-[1px] w-full relative bg-zinc-200"></div>
+        </div>
+
+        <div class="w-full overflow-hidden">
+          <div class="relative portfolio-swiper-container">
+            <div class="h-full">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-wrapper" id="portfolio-swiper-wrapper"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary my-[2px]">
+        <div
+          class="py-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[50px] text-white px-[15px] max-w-[1000px] mx-auto"
+        >
+          <div>
+            <h2 class="uppercase font-bold mb-[10px]">Over ons</h2>
+            <p>
+              Parketwerken in Kiev en de regio Kiev is onze specialiteit. Wij
+              voeren reparaties uit aan oude vloerbedekking met de hoogste
+              kwaliteit, tot het punt dat u het niet meer herkent.
+            </p>
+          </div>
+          <div>
+            <h2 class="uppercase font-bold mb-[10px]">PARKETDIENSTEN</h2>
+            <ul
+              class="list-disc marker:text-white marker:text-[20px] list-inside"
+            >
+              <li>
+                <span>Parket Restauratie</span>
+              </li>
+              <li>
+                <span>Parket Schuren</span>
+              </li>
+              <li>
+                <span>Parket en Vloer Schrapen</span>
+              </li>
+              <li>
+                <span>Parket Lakken en Beitsen</span>
+              </li>
+              <li>
+                <span>Parket en Laminaat Installatie</span>
+              </li>
+              <li>
+                <span>Parketvloer Reparatie</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="uppercase font-bold mb-[10px]">CONTACT</h2>
+            <ul>
+              <li>
+                <a href="tel:+380733838456">+380733838456</a>
+              </li>
+              <li>
+                <a href="mailto:zakaz@parketchik.kiev.ua"
+                  >zakaz@parketchik.kiev.ua</a
+                >
+                <br />
+                <span>Kiev, Zhmerinska St, 5</span>
+              </li>
+              <li class="flex gap-[15px] mt-[20px]">
+                <span
+                  class="iconify text-[44px] bg-red"
+                  style="color: white"
+                  data-icon="logos:telegram"
+                ></span>
+                <span
+                  class="iconify text-[44px] bg-red"
+                  style="color: white"
+                  data-icon="logos:whatsapp-icon"
+                ></span>
+                <span
+                  class="iconify text-[44px] bg-red"
+                  style="color: white"
+                  data-icon="skill-icons:instagram"
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-neutral-800">
+        <div
+          class="p-[15px] text-white text-center flex flex-col sm:flex-row justify-center"
+        >
+          <a
+            href="https://bento.me/danik-prich"
+            class="cursor-pointer pr-[10px] border-0 sm:border-r border-r-grayDark2 mr-[10px]"
+            >Auteursrecht 2024 © Daniel Prich</a
+          >
+          <a href="#" class="cursor-pointer text-grayDark2">Privacybeleid</a>
+        </div>
+      </footer>
+
+      <!-- Modal afbeeldingen -->
+      <section
+        class="hidden fixed top-0 z-10 w-screen h-screen overflow-hidden bg-slate-950/90 items-center"
+        id="images-modal"
+      >
+        <button
+          id="images-modal-close"
+          class="absolute top-[15px] right-[15px] bg-white rounded-lg"
+        >
+          <span
+            class="iconify text-[44px] bg-red"
+            style="color: #15355f"
+            data-icon="mdi:close"
+          ></span>
+        </button>
+        <div
+          class="w-full h-[calc(100vh-500px)] sm:h-[calc(100vh-200px)] max-w-screen"
+        >
+          <div class="relative w-full h-full modal-swiper-container">
+            <div
+              class="swiper-wrapper w-full h-full"
+              id="modal-images-swiper-wrapper"
+            ></div>
+            <div class="h-full w-full">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Zijmenu -->
+      <section
+        class="hidden fixed top-0 z-10 w-full h-screen bg-primary/40 items-center"
+        id="sidebar-menu-wrapper"
+      >
+        <button
+          id="sidebar-menu-close"
+          class="absolute top-[15px] right-[10px] bg-white rounded-lg hover:bg-gray"
+        >
+          <span
+            class="iconify text-[30px] bg-red"
+            style="color: #15355f"
+            data-icon="mdi:close"
+          ></span>
+        </button>
+        <div
+          class="translate-x-[-100%] w-[calc(100vw-50px)] h-full bg-white transition-all"
+          id="sidebar-menu-list"
+        >
+          <nav class="py-[60px]">
+            <ul class="flex flex-col text-primary text-2xl">
+              <li
+                class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray"
+              >
+                <a href="/nl" class="block w-full h-full px-[20px] py-[20px]"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray"
+              >
+                <a
+                  href="/nl/services/"
+                  class="block w-full h-full px-[20px] py-[20px]"
+                  >Diensten</a
+                >
+              </li>
+              <li
+                class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray"
+              >
+                <a
+                  href="/nl/prices"
+                  class="block w-full h-full px-[20px] py-[20px]"
+                  >Prijzen</a
+                >
+              </li>
+              <li
+                class="cursor-pointer border-b border-b-gray-light-500 hover:bg-gray"
+              >
+                <a
+                  href="/nl/contacts"
+                  class="block w-full h-full px-[20px] py-[20px]"
+                  >Contacten</a
+                >
+              </li>
+              <li class="flex justify-center px-[40px] py-[20px]">
+                <div class="pr-[10px]">
+                  <a href="/en/services" class="cursor-pointer">EN</a>
+                </div>
+                <div class="pl-[10px]">
+                  <button class="cursor-pointer">NL</button>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <script src="/dist/bundle.js"></script>
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  </body>
 </html>

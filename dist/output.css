@@ -901,6 +901,22 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
+.bg-grayDark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 101 114 / var(--tw-bg-opacity));
+}
+.bg-grayDark2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 149 159 / var(--tw-bg-opacity));
+}
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
 .fill-current {
   fill: currentColor;
 }
