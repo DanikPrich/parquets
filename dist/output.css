@@ -628,6 +628,12 @@ video {
 .mt-\[0px\] {
   margin-top: 0px;
 }
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+.mt-\[26px\] {
+  margin-top: 26px;
+}
 .block {
   display: block;
 }
@@ -997,6 +1003,9 @@ video {
 }
 .pb-\[60px\] {
   padding-bottom: 60px;
+}
+.pb-\[20px\] {
+  padding-bottom: 20px;
 }
 .text-center {
   text-align: center;
@@ -1371,6 +1380,10 @@ swiper-container::part(pagination) {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
