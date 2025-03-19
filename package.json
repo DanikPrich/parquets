@@ -7,7 +7,8 @@
     "postcssdev": "postcss ./src/input.css -o dist/output.css --watch",
     "webpackdev": "npx webpack --mode development --watch",
     "minify": "npx tailwindcss -o ./dist/minified.css --minify",
-    "build": "npx webpack --mode production"
+    "build": "npx webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Daniel",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",

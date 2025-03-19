@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/parquets/" />
     <title>Parquets page</title>
-  <script defer src="/main.bundle.js"></script><script defer src="/styles.bundle.js"></script></head>
+  </head>
 
   <body class="relative">
     <header class="border-b border-b-gray-light-500">
@@ -29,7 +30,7 @@
               <div class="w-full h-[1px] bg-slate-400"></div>
             </div>
             <div class="pl-[10px] text-white">
-              <a href="/nl">NL</a>
+              <a href="/nl/services/">NL</a>
             </div>
           </div>
         </div>
@@ -40,7 +41,7 @@
         <ul class="relative gap-[15px] hidden lg:flex">
           <li class="cursor-pointer border-b-primary group text-primary">
             <a href="/en">Home</a>
-            <div class="w-full h-[1px] bg-primary opacity-100"></div>
+            <div class="w-full h-[1px] bg-primary opacity-0"></div>
           </li>
           <li
             class="cursor-pointer border-b-primary group"
@@ -50,7 +51,7 @@
               <div class="">
                 <a href="/en/services">Services</a>
                 <div
-                  class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+                  class="w-full h-[1px] bg-primary opacity-100 group-hover:opacity-100 transition-all"
                 ></div>
               </div>
               <span
@@ -90,9 +91,7 @@
                 >
                   <a href="/en/services/varnishing/">Varnishing, Polishing</a>
                 </li>
-                <li
-                  class="flex items-center p-[10px] hover:text-black text-grayDark2 text-nowrap"
-                >
+                <li class="flex items-center p-[10px] text-black text-nowrap">
                   <a href="/en/services/installation/"
                     >Laminate and Parquet Board Installation</a
                   >
@@ -130,9 +129,10 @@
         </div>
         <div class="flex items-center justify-center">
           <div class="w-[50px]">
-            <img src="/assets/imgs/logo_circle5.png" alt="logo in circle" />
+            <img src="/src/assets/imgs/logo_circle5.png" alt="logo in circle" />
           </div>
         </div>
+
         <div class="flex justify-end">
           <button
             class="h-[30px] w-auto px-[10px] text-primary border-primary border-[1px] rounded-lg hover:bg-primary hover:text-white transition-all mr-[10px]"
@@ -144,389 +144,86 @@
     </header>
 
     <main>
-      <section
-        class="relative h-[calc(100vh-500px)] sm:h-[calc(100vh-300px)] max-w-screen mx-auto"
-      >
-        <swiper-container
-          pagination="true"
-          autoplay
-          pagination-clickable="true"
-          effect="fade"
-          class="h-full w-full"
-        >
-          <swiper-slide class="h-full w-full">
-            <div class="relative h-full w-full">
-              <img
-                src="/assets/imgs/slider_img1.jpeg"
-                alt="w-full h-full parquet example image ovject-cover"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="relative h-full w-full">
-              <img
-                src="/assets/imgs/slider_img2.jpeg"
-                alt="w-full h-full parquet example image ovject-cover"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-        <div
-          class="absolute w-full px-[20px] left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] text-white z-10 text-center font-bold"
-        >
-          <h1 class="text-2xl">RESTORATION AND POLISHING OF PARQUET</h1>
-          <p class="text-md mt-[10px]">
-            Experienced craftsmen use professional equipment and environmentally
-            friendly materials
-          </p>
-        </div>
-      </section>
+      <section>
+        <div class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
+          <div class="grid grid-cols-[1fr_auto_1fr] items-center">
+            <div class="h-[1px] w-full relative bg-zinc-200"></div>
+            <h1
+              class="text-2xl section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+            >
+              Laminate and Parquet Board Installation
+            </h1>
+            <div class="h-[1px] w-full relative bg-zinc-200"></div>
+          </div>
 
-      <section class="max-w-[1000px] my-[60px] mx-auto px-[15px]">
-        <div class="grid grid-cols-[1fr_auto_1fr] items-center">
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          <h2
-            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
-          >
-            PARQUER SERVICE
-          </h2>
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        </div>
-        <p class="mt-[25px] text-center text-grayDark2">
-          Everyone sooner or later faces the question of choosing a floor
-          covering. And of course, it is better to use new materials for room
-          arrangement. But sometimes, the old parquet can still serve faithfully
-          for many years. In this case, parquet restoration is exactly what will
-          give your floor a new life. If you have chosen new parquet or parquet
-          board, we will also be helpful. Now more about this and that…
-        </p>
-      </section>
+          <div class="mt-[25px]">
+            <p class="text-grayDark text-center">
+              Laminate and parquet board installation is carried out with
+              materials provided by the customer. We can provide consumable
+              materials upon agreement.
+            </p>
+          </div>
 
-      <section class="max-w-[1000px] my-[60px] mx-auto px-[15px]">
-        <div class="grid grid-cols-2 sm:grid-cols-3 grid-rows-2 gap-[15px]">
           <div
-            class="relative col-span-2 sm:col-span-1 row-span-1 sm:row-span-2 sm:h-full"
+            class="max-w-[1000px] sm:my-[25px] my-[30px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-[15px]"
           >
-            <div class="relative h-full w-full">
+            <div class="flex flex-col gap-[5px] text-grayDark2 justify-center">
+              <h2 class="text-xl text-primary font-bold mb-[10px]">
+                Preparation of the floor for laying laminate and parquet board
+              </h2>
+              <ol class="list-decimal list-outside">
+                <li class="ml-[15px] mb-[10px]">
+                  <strong class="text-primary"
+                    >Preparation of the floor surface</strong
+                  >
+                  <br />
+                  <p href="#" class="text-grayDark">
+                    Before installing parquet, parquet board, or laminate, the
+                    floor surface must be level. Preparation for different types
+                    of coverings varies. However, the entire surface must be
+                    leveled in the horizontal plane. Only minor deviations are
+                    allowed.
+                  </p>
+                </li>
+                <li class="ml-[15px] mb-[10px]">
+                  <strong class="text-primary">
+                    Features of laying laminate and parquet board
+                  </strong>
+                  <br />
+                  <p href="#" class="text-grayDark">
+                    Most often, the preparation of the floor for laying
+                    laminate, parquet board, or parquet takes more time than the
+                    laying itself. <strong>Laying laminate </strong> can be done
+                    by anyone who is not prepared. However, making a
+                    high-quality preparation of the floor for laying parquet
+                    board is not within the power of many. How to insulate and
+                    soundproof? And how and what to fix properly?
+                    <a class="underline" href="/en/services/sanding/"
+                      ><strong>How to sand the parquet board?</strong></a
+                    >
+                    What varnish to use for the finish? These questions will
+                    inevitably arise in the preparation process.
+                  </p>
+                </li>
+              </ol>
+              <div class="px-[25px] border-l-2 border-l-primary text-lg">
+                <p class="italic text-grayDark">
+                  An important role in this is played by experience and
+                  knowledge of the market. This allows not only to save but also
+                  to ensure the quality of
+                  <strong>laying laminate or parquet board</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="group">
               <img
-                class="h-full object-cover"
-                src="/assets/imgs/slider_img1.jpeg"
+                class="h-full object-cover group-hover:scale-[1.02] transition-all duration-500 rounded-md"
+                src="/src/assets/imgs/parquet-installation.jpeg"
                 alt="parquet example image"
               />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-            <div
-              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
-            >
-              <h2 class="font-bold text-white text-4xl">Parquet Repair</h2>
-            </div>
-          </div>
-          <div class="relative sm:col-span-1 col-span-2">
-            <div class="relative h-full w-full">
-              <img
-                class="object-cover"
-                src="/assets/imgs/slider_img1.jpeg"
-                alt="parquet example image"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-            <div
-              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
-            >
-              <h3 class="font-medium text-white text-2xl">Parquet Sanding</h3>
-            </div>
-          </div>
-          <div class="relative col-span-1">
-            <div class="relative h-full w-full">
-              <img
-                class="h-full object-cover"
-                src="/assets/imgs/slider_img1.jpeg"
-                alt="parquet example image"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-            <div
-              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
-            >
-              <h3 class="font-medium text-white text-2xl">
-                Parquet Tinting and Varnishing
-              </h3>
-            </div>
-          </div>
-          <div class="relative col-span-1">
-            <div class="relative h-full w-full">
-              <img
-                class="h-full object-cover"
-                src="/assets/imgs/slider_img1.jpeg"
-                alt="parquet example image"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-            <div
-              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
-            >
-              <h3 class="font-medium text-white text-2xl">Parquet Grinding</h3>
-            </div>
-          </div>
-          <div class="relative sm:col-span-1 col-span-2">
-            <div class="relative h-full w-full">
-              <img
-                class="h-full object-cover"
-                src="/assets/imgs/slider_img1.jpeg"
-                alt="parquet example image"
-              />
-              <div
-                class="absolute h-full w-full left-0 top-0 bg-black opacity-20"
-              ></div>
-            </div>
-            <div
-              class="absolute text-center top-0 left-0 w-full h-full flex items-center justify-center"
-            >
-              <h3 class="font-medium text-white text-2xl">
-                Parquet Installation
-              </h3>
             </div>
           </div>
         </div>
-      </section>
-
-      <section>
-        <div class="grid grid-cols-[1fr_auto_1fr] items-center my-[20px]">
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          <h3
-            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
-          >
-            HOW TO ORDER
-          </h3>
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        </div>
-        <div class="bg-gray py-[40px]">
-          <div class="max-w-[1000px] mx-auto px-[15px]">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] bg-gray">
-              <div
-                class="flex flex-col items-center justify-start shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <span
-                  class="iconify text-[48px] bg-red"
-                  style="color: #15355f"
-                  data-icon="fluent:clipboard-bullet-list-20-filled"
-                ></span>
-                <div class="p-[10px] text-center text-grayDark2">
-                  <h5 class="uppercase font-bold text-grayDark">Stage 1</h5>
-                  <h6 class="font-bold uppercase">Agreement</h6>
-                  <p class="text-center mt-[15px]">
-                    <span>
-                      <strong class="text-primary">Result</strong>:<br />
-                      Agreed terms of cooperation, deadlines, and cost of
-                      work</span
-                    >
-                  </p>
-                  <p class="mt-[10px]">
-                    <span
-                      >Begins with your request for services. Your wishes and
-                      requirements for the work are taken into account. If
-                      necessary, a master visits the object for inspection.
-                      Formation and submission of proposals</span
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <span
-                  class="iconify text-[44px] bg-red"
-                  style="color: #15355f"
-                  data-icon="simple-icons:apacheparquet"
-                ></span>
-                <div class="p-[10px] text-center text-grayDark2">
-                  <h5 class="uppercase font-bold text-grayDark">Stage 2</h5>
-                  <h6 class="font-bold uppercase">Execution of Works</h6>
-                  <p class="text-center mt-[15px]">
-                    <span>
-                      <strong class="text-primary">Result</strong>:
-                      <br />Execution of works to achieve the expected
-                      result</span
-                    >
-                  </p>
-                  <p class="mt-[10px]">
-                    <span
-                      >Works are carried out according to approved quality
-                      parameters. The customer monitors the quality of work and
-                      materials used</span
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <span
-                  class="iconify text-[44px] bg-red"
-                  style="color: #15355f"
-                  data-icon="mdi:deal"
-                ></span>
-                <div class="p-[10px] text-center text-grayDark2">
-                  <h5 class="uppercase font-bold text-grayDark">Stage 3</h5>
-                  <h6 class="font-bold uppercase">Completion</h6>
-                  <p class="text-center mt-[15px]">
-                    <span>
-                      <strong class="text-primary">Result</strong>:
-                      <br />Obtaining expected results of work within agreed
-                      deadlines</span
-                    >
-                  </p>
-                  <p class="mt-[10px]">
-                    <span
-                      >At this stage, the parties carry out final work, hand
-                      over/accept the object, and settle accounts</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div
-          class="grid grid-cols-[1fr_auto_1fr] items-center mt-[50px] mb-[20px]"
-        >
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          <h3
-            class="text-md section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
-          >
-            PARQUET RESTORATION COST
-          </h3>
-          <div class="h-[1px] w-full relative bg-zinc-200"></div>
-        </div>
-        <div class="">
-          <div class="max-w-[1000px] mx-auto px-[15px]">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Parquet Restoration
-                  </p>
-                  <p>comprehensive</p>
-                  <p class="font-bold mt-[10px]">from 140 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    includes <br />
-                    sanding, puttying, 3-layer varnishing
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">Sanding</p>
-                  <p class="font-bold mt-[28px]">from 60 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    performed <br />
-                    with a drum sanding machine
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">Polishing</p>
-                  <p class="font-bold mt-[28px]">from 40 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    performed <br />
-                    with a disk polishing machine
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="max-w-[1000px] mx-auto px-[15px]">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
-            <div class="flex h-full flex-col items-center justify-center">
-              <div class="text-center">
-                <h3 class="font-bold text-xl">Additional Services</h3>
-                <button
-                  class="mt-[10px] text-xl w-auto px-[15px] py-[10px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
-                >
-                  <span>Inquire Price</span>
-                </button>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-center drop-shadow-md shadow-md p-[20px] bg-white rounded-lg"
-            >
-              <div class="text-grayDark2 flex">
-                <ul
-                  class="list-disc marker:text-primary marker:text-[20px] list-inside"
-                >
-                  <li>
-                    <span>Applying varnish</span>
-                  </li>
-                  <li>
-                    <span>Crack filling</span>
-                  </li>
-                  <li>
-                    <span>Skirting board installation</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-cetner drop-shadow-md shadow-md p-[20px] bg-white rounded-lg"
-            >
-              <div class="text-grayDark2">
-                <p class="font-bold text-primary text-lg">Installation</p>
-                <ul
-                  class="list-disc marker:text-primary marker:text-[20px] list-inside"
-                >
-                  <li>
-                    <span>Laminate and plywood</span>
-                  </li>
-                  <li>
-                    <span>Parquet and parquet board</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pb-[60px]">
-        <div class="flex justify-center my-[20px]">
-          <div class="h-[3px] w-[70px] bg-zinc-200"></div>
-        </div>
-        <h4 class="font-bold text-xl text-center">
-          Minimum order -
-          <span class="text-primary text-2xl">from 20* sqm.</span>
-        </h4>
-        <p class="text-grayDark2 text-sm text-center mt-[10px]">
-          * if the order volume is less than 20 sqm. - <br />
-          the cost and conditions are negotiated separately
-        </p>
       </section>
 
       <section>
@@ -567,7 +264,7 @@
             <div class="relative h-full w-full group overflow-hidden">
               <img
                 class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-                src="/assets/imgs/slider_img1.jpeg"
+                src="/src/assets/imgs/slider_img1.jpeg"
                 alt="parquet example image"
               />
               <div
@@ -586,7 +283,7 @@
             <div class="relative h-full w-full group overflow-hidden">
               <img
                 class="h-full object-cover group-hover:scale-[1.1] transition-all duration-500"
-                src="/assets/imgs/slider_img1.jpeg"
+                src="/src/assets/imgs/slider_img1.jpeg"
                 alt="parquet example image"
               />
               <div
@@ -862,7 +559,7 @@
                   <button class="cursor-pointer">EN</button>
                 </div>
                 <div class="pl-[10px]">
-                  <a href="/nl" class="cursor-pointer">NL</a>
+                  <a href="/nl/services/" class="cursor-pointer">NL</a>
                 </div>
               </li>
             </ul>

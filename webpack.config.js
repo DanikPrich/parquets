@@ -10,7 +10,8 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/", // Или "/parquets/" если проект в подпапке
+    // publicPath: "/parquets/",
+    publicPath: "/",
     clean: true,
   },
   module: {
@@ -57,6 +58,45 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/en/index.html",
       filename: "en/index.html",
+      chunks: ["main", "styles"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/en/prices/index.html",
+      filename: "en/prices/index.html",
+      chunks: ["main", "styles"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/installation/index.html",
+      filename: "en/services/installation/index.html",
+      chunks: ["main", "styles"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/repair/index.html",
+      filename: "en/services/repair/index.html",
+      chunks: ["main", "styles"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/restoration/index.html",
+      filename: "en/services/restoration/index.html",
+      chunks: ["main", "styles"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/sanding/index.html",
+      filename: "en/services/sanding/index.html",
+      chunks: ["main", "styles"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/scraping/index.html",
+      filename: "en/services/scraping/index.html",
+      chunks: ["main", "styles"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/varnishing/index.html",
+      filename: "en/services/varnishing/index.html",
       chunks: ["main", "styles"],
     }),
   ],
