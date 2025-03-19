@@ -2,15 +2,20 @@ import { register } from "swiper/element/bundle";
 import Swiper from "swiper/bundle";
 import "swiper/swiper-bundle.css";
 
+import sliderImg1 from "./assets/imgs/slider_img1.jpeg";
+import sliderImg2 from "./assets/imgs/slider_img2.jpeg";
+import sliderImg3 from "./assets/imgs/slider_img3.jpeg";
+
 document.addEventListener("DOMContentLoaded", function () {
   // Array of image paths
+
   const imagesPaths = [
-    "/src/assets/imgs/slider_img1.jpeg",
-    "/src/assets/imgs/slider_img2.jpeg",
-    "/src/assets/imgs/slider_img3.jpeg",
-    "/src/assets/imgs/slider_img1.jpeg",
-    "/src/assets/imgs/slider_img2.jpeg",
-    "/src/assets/imgs/slider_img3.jpeg",
+    sliderImg1,
+    sliderImg2,
+    sliderImg3,
+    sliderImg1,
+    sliderImg2,
+    sliderImg3,
   ];
 
   const images = imagesPaths.map((imgPath, index) => {
