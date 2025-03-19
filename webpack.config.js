@@ -3,6 +3,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true, // Сжатие gzip
+    port: 3000, // Порт для локального сервера
+    open: true, // Автоматически открывать браузер
+    hot: true, // Горячая перезагрузка (Hot Module Replacement)
+  },
   entry: {
     main: "./src/index.js", // Основной JS
     styles: "./src/input.css", // CSS-файл
@@ -10,8 +19,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    // publicPath: "/parquets/",
-    publicPath: "/",
+    publicPath: "/parquets/",
     clean: true,
   },
   module: {
@@ -45,7 +53,6 @@ module.exports = {
     ],
   },
   plugins: [
-    // Копируем статические HTML-файлы из src
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -54,19 +61,16 @@ module.exports = {
         },
       ],
     }),
-    // Обработка HTML с автоматическим добавлением скриптов
     new HtmlWebpackPlugin({
       template: "./src/en/index.html",
       filename: "en/index.html",
       chunks: ["main", "styles"],
     }),
-
     new HtmlWebpackPlugin({
       template: "./src/en/prices/index.html",
       filename: "en/prices/index.html",
       chunks: ["main", "styles"],
     }),
-
     new HtmlWebpackPlugin({
       template: "./src/en/services/installation/index.html",
       filename: "en/services/installation/index.html",
@@ -93,10 +97,14 @@ module.exports = {
       filename: "en/services/scraping/index.html",
       chunks: ["main", "styles"],
     }),
-
     new HtmlWebpackPlugin({
       template: "./src/en/services/varnishing/index.html",
       filename: "en/services/varnishing/index.html",
+      chunks: ["main", "styles"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/services/index.html",
+      filename: "en/services/index.html",
       chunks: ["main", "styles"],
     }),
   ],
