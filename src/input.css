@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Raleway";
   src: url("./assets/fonts/Raleway-Medium.ttf");
-}
+} */
 
 @font-face {
   font-family: "net-necks";
@@ -96,4 +96,8 @@ swiper-container::part(pagination) {
 .swiper-button-prev::after {
   color: white;
   font-size: 20px;
+}
+
+.iti {
+  width: 100%;
 }

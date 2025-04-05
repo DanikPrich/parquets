@@ -107,5 +107,10 @@ module.exports = {
       filename: "en/services/index.html",
       chunks: ["main", "styles"],
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/contacts/index.html",
+      filename: "en/contacts/index.html",
+      chunks: ["main", "styles"],
+    }),
   ],
 };
