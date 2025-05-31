@@ -246,125 +246,126 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Contact form */
 
   /* Mobile validator */
+  let phoneInput = document.querySelector("#phone");
+  if (phoneInput) {
+    let validMsg = document.querySelector("#valid-msg");
+    let errorMsg = document.querySelector("#error-msg");
+    // here, the index maps to the error code returned from getValidationError - see readme
+    let errorMap = [
+      "Неверный формат",
+      "Неверный код страны",
+      "Слишком короткий",
+      "Слишком длинный",
+      "Неверный формат",
+    ];
 
-  let input = document.querySelector("#phone"),
-    errorMsg = document.querySelector("#error-msg"),
-    validMsg = document.querySelector("#valid-msg");
-
-  // here, the index maps to the error code returned from getValidationError - see readme
-  let errorMap = [
-    "Неверный формат",
-    "Неверный код страны",
-    "Слишком короткий",
-    "Слишком длинный",
-    "Неверный формат",
-  ];
-
-  // initialise plugin
-  let iti = window.intlTelInput(input, {
-    utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js",
-    preferredCountries: ["ua", "sk", "gb", "usa"],
-  });
-
-  let reset = function () {
-    input.classList.remove("error");
-    errorMsg.innerHTML = "";
-    errorMsg.classList.add("hidden");
-    validMsg.classList.add("hidden");
-  };
-
-  // on blur: validate
-  input.addEventListener("blur", function () {
-    reset();
-    if (input.value.trim()) {
-      if (iti.isValidNumber()) {
-        validMsg.classList.remove("hidden");
-      } else {
-        input.classList.add("error");
-        let errorCode = iti.getValidationError();
-
-        errorMsg.innerHTML = errorMap[errorCode]
-          ? errorMap[errorCode]
-          : errorMap[0];
-        errorMsg.classList.remove("hidden");
-      }
-    }
-  });
-
-  // on keyup / change flag: reset
-  input.addEventListener("change", reset);
-  input.addEventListener("keyup", reset);
-
-  /* Contact form submition */
-  async function postData({ fistName, lastName, tel, email, message }) {
-    const botToken = "8074235029:AAFk3xc_IrVAU8LmzX87L8pi31j8puh5cco";
-    const chatId = "203899215";
-
-    const finalText = `
-    <b>🟢 У тебя новая заявка! ЮХУ! 🟢</b>
-  ━━━━━━━━━━━━━━ 
-  ├ Имя: ${fistName} ${lastName}
-  ├ Телефон: ${tel}
-  ├ Email: ${email}
-  ━━━━━━━━━━━━━━
-  ├ Message: ${message}
-    `.trim();
-
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: finalText,
-        parse_mode: "HTML",
-      }),
+    // initialise plugin
+    //TODO Tel function
+    let iti = window.intlTelInput(phoneInput, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js",
+      preferredCountries: ["ua", "sk", "gb", "usa"],
     });
 
-    return await res.json();
-  }
+    let reset = function () {
+      phoneInput.classList.remove("error");
+      errorMsg.innerHTML = "";
+      errorMsg.classList.add("hidden");
+      validMsg.classList.add("hidden");
+    };
 
-  const btnFormSubmit = document.querySelector("#formSubmit");
+    // on blur: validate
+    phoneInput.addEventListener("blur", function () {
+      reset();
+      if (phoneInput.value.trim()) {
+        if (iti.isValidNumber()) {
+          validMsg.classList.remove("hidden");
+        } else {
+          phoneInput.classList.add("error");
+          let errorCode = iti.getValidationError();
 
-  btnFormSubmit.addEventListener("click", (e) => {
-    e.preventDefault();
+          errorMsg.innerHTML = errorMap[errorCode]
+            ? errorMap[errorCode]
+            : errorMap[0];
+          errorMsg.classList.remove("hidden");
+        }
+      }
+    });
 
-    const firstNameElem = document.querySelector("#first-name"),
-      lastNameElem = document.querySelector("#last-name"),
-      phoneElem = document.querySelector("#phone"),
-      emailElem = document.querySelector("#email"),
-      messageElem = document.querySelector("#message");
+    // on keyup / change flag: reset
+    phoneInput.addEventListener("change", reset);
+    phoneInput.addEventListener("keyup", reset);
 
-    if (
-      !phoneElem.classList.contains("error") &&
-      phoneElem.value &&
-      firstNameElem.value &&
-      lastNameElem.value &&
-      phoneElem.value &&
-      emailElem.value &&
-      messageElem.value
-    ) {
-      const data = {
-        firstName: firstNameElem.value,
-        lastName: lastNameElem.value,
-        tel: phoneElem.value,
-        email: emailElem.value,
-        message: messageElem.value,
-      };
+    /* Contact form submition */
+    async function postData({ fistName, lastName, tel, email, message }) {
+      const botToken = "8074235029:AAFk3xc_IrVAU8LmzX87L8pi31j8puh5cco";
+      const chatId = "203899215";
 
-      const res = postData(data)
-        .then(() => {
-          console.log("Благодарю за регистрацию!");
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+      const finalText = `
+      <b>🟢 У тебя новая заявка! ЮХУ! 🟢</b>
+    ━━━━━━━━━━━━━━ 
+    ├ Имя: ${fistName} ${lastName}
+    ├ Телефон: ${tel}
+    ├ Email: ${email}
+    ━━━━━━━━━━━━━━
+    ├ Message: ${message}
+      `.trim();
 
-      console.log(res);
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: finalText,
+          parse_mode: "HTML",
+        }),
+      });
+
+      return await res.json();
     }
-  });
+
+    const btnFormSubmit = document.querySelector("#formSubmit");
+
+    btnFormSubmit.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const firstNameElem = document.querySelector("#first-name"),
+        lastNameElem = document.querySelector("#last-name"),
+        phoneElem = document.querySelector("#phone"),
+        emailElem = document.querySelector("#email"),
+        messageElem = document.querySelector("#message");
+
+      if (
+        !phoneElem.classList.contains("error") &&
+        phoneElem.value &&
+        firstNameElem.value &&
+        lastNameElem.value &&
+        phoneElem.value &&
+        emailElem.value &&
+        messageElem.value
+      ) {
+        const data = {
+          firstName: firstNameElem.value,
+          lastName: lastNameElem.value,
+          tel: phoneElem.value,
+          email: emailElem.value,
+          message: messageElem.value,
+        };
+
+        const res = postData(data)
+          .then(() => {
+            console.log("Благодарю за регистрацию!");
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        console.log(res);
+      }
+    });
+  }
 });
