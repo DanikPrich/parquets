@@ -164,22 +164,30 @@
 
       <section class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
         <div class="grid grid-cols-2 items-center">
-          <div class="flex flex-col gap-4 w-[200px] mx-auto">
+          <div class="flex flex-col gap-4 w-[300px] mx-auto">
             <h2
               class="text-2xl section-title section-title-center capitalize font-bold text-grayDark"
             >
               Contacts
             </h2>
-            <a
-              class="text-primary text-base hover:underline"
-              href="tel:+380733838456"
-              >+380733838456</a
-            >
-            <a
-              class="text-primary text-base hover:underline"
-              href="mailto:zakaz@parketchik.kiev.ua"
-              >zakaz@parketchik.kiev.ua</a
-            >
+            <ul>
+              <li>
+                <p>Service area:</p>
+                <p>Amsterdam | Rotterdam | The Hague | North Holland</p>
+              </li>
+              <li class="mt-4">
+                <a class="text-primary hover:underline" href="tel:+31615107134"
+                  >+31 615107134</a
+                >
+              </li>
+              <li class="mt-1">
+                <a
+                  class="text-primary hover:underline"
+                  href="mailto:realparket@outlook.com"
+                  >realparket@outlook.com</a
+                >
+              </li>
+            </ul>
             <div
               class="relative w-full flex justify-center my-6 after:content-[''] after:absolute after:h-px after:w-full after:bg-grayDark2/50 dark:after:bg-dark after:left-0 after:top-1/2 after:-translate-y-1/2 after:z-0"
             >
@@ -313,21 +321,28 @@
 
       <section>
         <div class="bg-primary py-[50px]">
-          <div class="text-white text-center max-w-[450px] mx-auto px-[30px]">
-            <h3 class="sm:text-4xl text-2xl font-bold">Specify the Price</h3>
+          <div class="text-white text-center max-w-[600px] mx-auto px-[30px]">
+            <h3 class="sm:text-4xl text-2xl font-bold">
+              Need a Price Estimate?
+            </h3>
             <p class="my-[16px] flex flex-col gap-[15px]">
-              <span class="sm:text-2xl text-md leading-relaxed"
-                >The best way to determine the cost of work is to consult with
-                our specialists for consultation and estimation. You may also
-                find it helpful to receive advice on material selection. We
-                provide all consultations, advice, and estimates</span
+              <span class="sm:text-2xl text-md leading-relaxed font-light"
+                >The best way to determine the cost of your parquet project is
+                through a free consultation with our specialists.</span
               >
-              <strong class="sm:text-3xl text-xl">FOR FREE</strong>
+              <span class="sm:text-2xl text-md leading-relaxed font-light">
+                We’ll assess your needs, advise on materials, and offer a
+                personalized quote.
+              </span>
+              <strong class="sm:text-2xl text-xl"
+                >Consultation, advice, and estimate — all completely
+                free</strong
+              >
             </p>
             <button
               class="mt-[10px] sm:text-3xl text-xl w-auto px-[15px] py-[10px] bg-white text-primary border-[1px] rounded-xl hover:bg-primary hover:text-white transition-all"
             >
-              <span>Receive an estimate</span>
+              <span>Request a Free Estimate</span>
             </button>
           </div>
         </div>
@@ -355,16 +370,20 @@
         </div>
       </section>
 
-      <section class="bg-primary my-[2px]">
+      <footer class="bg-primary my-[2px]">
         <div
           class="py-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[50px] text-white px-[15px] max-w-[1000px] mx-auto"
         >
           <div>
             <h2 class="uppercase font-bold mb-[10px]">About us</h2>
             <p>
-              Parquet works in Kyiv and the Kyiv region is our main
-              specialization. We perform old floor covering repair with the
-              highest quality, to the point that you won't recognize it.
+              RealParket specializes in high-quality parquet flooring services
+              in Amsterdam, Rotterdam, The Hague, and across the North Holland
+              region.
+            </p>
+            <p class="mt-2">
+              We restore, maintain, and install parquet with precision, care,
+              and an uncompromising standard.
             </p>
           </div>
           <div>
@@ -397,14 +416,18 @@
             <h2 class="uppercase font-bold mb-[10px]">CONTACTS</h2>
             <ul>
               <li>
-                <a href="tel:+380733838456">+380733838456</a>
+                <a class="hover:underline" href="tel:+31615107134"
+                  >+31 615107134</a
+                >
               </li>
               <li>
-                <a href="mailto:zakaz@parketchik.kiev.ua"
-                  >zakaz@parketchik.kiev.ua</a
+                <a class="hover:underline" href="mailto:realparket@outlook.com"
+                  >realparket@outlook.com</a
                 >
-                <br />
-                <span>Kyiv, Zhmerinska St, 5</span>
+              </li>
+              <li>
+                <p class="mt-4">Service area:</p>
+                <p>Amsterdam | Rotterdam | The Hague | North Holland</p>
               </li>
               <li class="flex gap-[15px] mt-[20px]">
                 <span
@@ -426,9 +449,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </footer>
 
-      <footer class="bg-neutral-800">
+      <section class="bg-neutral-800">
         <div
           class="p-[15px] text-white text-center flex flex-col sm:flex-row justify-center"
         >
@@ -439,7 +462,7 @@
           >
           <a href="#" class="cursor-pointer text-grayDark2">Privacy policy</a>
         </div>
-      </footer>
+      </section>
 
       <!-- Modal images -->
       <section
