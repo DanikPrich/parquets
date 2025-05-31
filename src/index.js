@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const handleSidebarServicesDropdownToggle = () => {
     if (isSidebarServicesDropdownOpen) {
       sidebarServicesDropdown.classList.add("h-0");
-      sidebarServicesDropdown.classList.remove("h-[240px]");
+      sidebarServicesDropdown.classList.remove("h-[200px]");
       sidebarServicesDropdown.classList.remove("mb-[20px]");
 
       sidebarServicesDropdownArrow.classList.remove("rotate-180");
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       sidebarServicesDropdown.classList.remove("pl-[10px]");
     } else {
-      sidebarServicesDropdown.classList.add("h-[240px]");
+      sidebarServicesDropdown.classList.add("h-[200x]");
       sidebarServicesDropdown.classList.add("mb-[20px]");
       sidebarServicesDropdown.classList.remove("h-0");
 
