@@ -1,7 +1,7 @@
 import { register } from "swiper/element/bundle";
 import Swiper from "swiper/bundle";
 import "swiper/swiper-bundle.css";
-
+import "./input.css";
 import sliderImg1 from "./assets/imgs/slider_img1.jpeg";
 import sliderImg2 from "./assets/imgs/slider_img2.jpeg";
 import sliderImg3 from "./assets/imgs/slider_img3.jpeg";

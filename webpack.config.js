@@ -11,10 +11,13 @@ module.exports = {
     port: 3000, // Порт для локального сервера
     open: true, // Автоматически открывать браузер
     hot: true, // Горячая перезагрузка (Hot Module Replacement)
+    watchFiles: ["src/**/*.html"],
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
   entry: {
-    main: "./src/index.js", // Основной JS
-    styles: "./src/input.css", // CSS-файл
+    main: "./src/index.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -53,64 +56,66 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: "src/index.html",
-          to: "index.html",
-        },
-      ],
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html",
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/index.html",
       filename: "en/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/prices/index.html",
       filename: "en/prices/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/en/about/index.html",
+      filename: "en/about/index.html",
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/installation/index.html",
       filename: "en/services/installation/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/repair/index.html",
       filename: "en/services/repair/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/restoration/index.html",
       filename: "en/services/restoration/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/sanding/index.html",
       filename: "en/services/sanding/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
 
     new HtmlWebpackPlugin({
       template: "./src/en/services/scraping/index.html",
       filename: "en/services/scraping/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/varnishing/index.html",
       filename: "en/services/varnishing/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/services/index.html",
       filename: "en/services/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/en/contacts/index.html",
       filename: "en/contacts/index.html",
-      chunks: ["main", "styles"],
+      chunks: ["main"],
     }),
   ],
 };

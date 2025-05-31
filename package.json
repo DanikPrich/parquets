@@ -6,7 +6,7 @@
   "scripts": {
     "postcssdev": "postcss ./src/input.css -o dist/output.css --watch",
     "webpackdev": "npx webpack --mode development --watch",
-    "dev": "webpack serve --mode development",
+    "dev": "webpack serve --mode development --watch",
     "minify": "npx tailwindcss -o ./dist/minified.css --minify",
     "build": "npx webpack --mode production",
     "deploy": "gh-pages -d dist"

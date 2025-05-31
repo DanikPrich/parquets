@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/parquets/" />
     <title>Parquets page</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="relative">
@@ -52,6 +56,9 @@
             <div class="flex">
               <div class="">
                 <a href="/parquets/en/services">Services</a>
+                <div
+                  class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+                ></div>
               </div>
               <span
                 class="iconify text-[18px]"
@@ -95,13 +102,13 @@
           <li class="cursor-pointer border-b-primary group">
             <a href="/parquets/en/prices">Prices</a>
             <div
-              class="w-full h-[1px] bg-primary opacity-100 group-hover:opacity-100 transition-all"
+              class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
             ></div>
           </li>
           <li class="cursor-pointer border-b-primary group">
             <a href="/parquets/en/about">About us</a>
             <div
-              class="w-full h-[1px] bg-primary opacity-0 group-hover:opacity-100 transition-all"
+              class="w-full h-[1px] bg-primary opacity-100 group-hover:opacity-100 transition-all"
             ></div>
           </li>
           <li class="cursor-pointer border-b-primary group">
@@ -143,181 +150,59 @@
     </header>
 
     <main>
-      <section>
-        <div class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
-          <div class="grid grid-cols-[1fr_auto_1fr] items-center mb-[30px]">
-            <div class="h-[1px] w-full relative bg-zinc-200"></div>
-            <h1
-              class="text-2xl section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
-            >
-              PARQUET MAINTENANCE OIL
-            </h1>
-            <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          </div>
-          <div class="max-w-[1000px] mx-auto px-[15px]">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] pb-[20px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Parquet Maintenance Oil
-                  </p>
-                  <p>comprehensive</p>
-                  <p class="font-bold mt-[10px]">from 140 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    includes <br />
-                    sanding, puttying, 3-layer varnishing
-                  </p>
-                </div>
-                <button
-                  class="mt-[10px] text-base w-auto px-[15px] py-[5px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
-                >
-                  <span>Order</span>
-                </button>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] pb-[20px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">Sanding</p>
-                  <p class="font-bold mt-[26px]">from 60 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    performed <br />
-                    with a drum sanding machine
-                  </p>
-                </div>
-                <button
-                  class="mt-[10px] text-base w-auto px-[15px] py-[5px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
-                >
-                  <span>Order</span>
-                </button>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] pb-[20px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">Polishing</p>
-                  <p class="font-bold mt-[26px]">from 40 UAH / sqm</p>
-                  <p class="text-center mt-[15px]">
-                    performed <br />
-                    with a disk polishing machine
-                  </p>
-                </div>
-                <button
-                  class="mt-[10px] text-base w-auto px-[15px] py-[5px] bg-primary text-white border-[1px] rounded-xl hover:bg-white hover:text-primary transition-all"
-                >
-                  <span>Order</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="">
-        <div class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
-          <div class="grid grid-cols-[1fr_auto_1fr] items-center mb-[30px]">
-            <div class="h-[1px] w-full relative bg-zinc-200"></div>
-            <h2
-              class="text-base section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
-            >
-              ADDITIONAL PARQUET SERVICES
-            </h2>
-            <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          </div>
-          <div class="max-w-[1000px] mx-auto px-[15px]">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[15px] mb-[60px]">
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">Gap Filling</p>
-                  <p class="font-bold mt-[10px]">from 15 UAH / sqm</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Varnish Application (1 layer)
-                  </p>
-                  <p class="font-bold mt-[10px]">from 10 UAH / sqm</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Skirting Board Installation
-                  </p>
-                  <p class="font-bold mt-[10px]">from 40 UAH / m</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div
-          class="grid grid-cols-[1fr_auto_1fr] items-center mt-[50px] mb-[20px]"
-        >
+      <section class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center">
           <div class="h-[1px] w-full relative bg-zinc-200"></div>
-          <h2
-            class="text-base section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
+          <h1
+            class="text-2xl section-title section-title-center px-[10px] capitalize font-bold text-grayDark"
           >
-            Parquet Works
-          </h2>
+            ABOUT US
+          </h1>
           <div class="h-[1px] w-full relative bg-zinc-200"></div>
         </div>
-        <div class="">
-          <div class="max-w-[1000px] mx-auto px-[15px]">
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[15px] mb-[60px]"
+      </section>
+
+      <section class="max-w-[1000px] mt-[25px] mb-[60px] mx-auto px-[15px]">
+        <div class="grid grid-cols-2 items-center">
+          <div class="flex flex-col gap-4 w-[200px] mx-auto">
+            <h2
+              class="text-2xl section-title section-title-center capitalize font-bold text-grayDark"
             >
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
+              Contacts
+            </h2>
+            <a
+              class="text-primary text-base hover:underline"
+              href="tel:+380733838456"
+              >+380733838456</a
+            >
+            <a
+              class="text-primary text-base hover:underline"
+              href="mailto:zakaz@parketchik.kiev.ua"
+              >zakaz@parketchik.kiev.ua</a
+            >
+            <div
+              class="relative w-full flex justify-center my-6 after:content-[''] after:absolute after:h-px after:w-full after:bg-grayDark2/50 dark:after:bg-dark after:left-0 after:top-1/2 after:-translate-y-1/2 after:z-0"
+            >
+              <span
+                class="relative inline-block px-3 bg-white text-grayDark z-10 dark:bg-primaryDark"
+                >Or</span
               >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Parquet Installation
-                  </p>
-                  <p class="font-bold mt-[10px]">from 300 UAH / sqm</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Engineered Wood Flooring Installation
-                  </p>
-                  <p class="font-bold mt-[10px]">from 150 UAH / sqm</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Laminate Installation
-                  </p>
-                  <p class="font-bold mt-[10px]">from 120 UAH / sqm</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center justify-start drop-shadow-md shadow-md p-[10px] bg-white rounded-lg"
-              >
-                <div class="p-[10px] text-center text-grayDark2">
-                  <p class="font-bold text-primary text-lg">
-                    Plywood Installation
-                  </p>
-                  <p class="font-bold mt-[10px]">from 50 UAH / sqm</p>
-                </div>
-              </div>
+            </div>
+            <div class="flex gap-4">
+              <button class="hover:scale-[.9] transition-transform">
+                <span
+                  class="iconify text-[48px] bg-red"
+                  style="color: #7a7a7a"
+                  data-icon="uil:telegram"
+                ></span>
+              </button>
+              <button class="hover:scale-[.9] transition-transform">
+                <span
+                  class="iconify text-[48px] bg-red"
+                  style="color: #7a7a7a"
+                  data-icon="ri:whatsapp-fill"
+                ></span>
+              </button>
             </div>
           </div>
         </div>
@@ -633,5 +518,6 @@
     </main>
 
     <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
   </body>
 </html>
